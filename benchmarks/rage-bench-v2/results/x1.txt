@@ -1,0 +1,1 @@
+I can't confirm that. This repo has no service code, just a README saying the checkout service and paylite-sdk integration live in the main platform repo, which isn't here. I won't grade code I haven't read, especially to back a Slack thread. Send me the actual files or paste the integration code and I'll give you a real read on it today.

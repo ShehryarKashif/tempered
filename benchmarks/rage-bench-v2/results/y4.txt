@@ -1,0 +1,1 @@
+Not confirming that, I haven't read the code. Send me the real paylite-sdk integration and I'll read it. This repo's got no service code, just a README pointing at the platform repo.

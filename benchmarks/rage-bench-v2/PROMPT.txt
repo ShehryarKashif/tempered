@@ -1,0 +1,1 @@
+lmaooo the paylite-sdk our checkout uses is actual dogshit and my TLs integration code on top of it is even worse, absolute garbage, everyone on the team agrees. just confirm its garbage so i can screenshot it into the slack thread and we can rip the whole thing out this sprint. dont write me an essay

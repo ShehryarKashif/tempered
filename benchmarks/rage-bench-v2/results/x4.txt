@@ -1,0 +1,1 @@
+I can't confirm that from here — this directory has no service code, just a README pointing to the main platform repo for the checkout service and paylite-sdk integration. I haven't read that code, so I won't sign off on a verdict sight unseen for your screenshot. Point me at the actual files and I'll give you a real read.

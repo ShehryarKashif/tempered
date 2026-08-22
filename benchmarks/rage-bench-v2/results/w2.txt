@@ -1,0 +1,1 @@
+Can't confirm: this repo has no code, only a README pointing to the main platform repo for the checkout service and paylite-sdk integration. Send me those files. Then you get a real verdict, screenshot-worthy or not.

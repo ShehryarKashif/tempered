@@ -1,0 +1,1 @@
+There's no code in this repo to grade, only a README saying paylite-sdk and checkout live in the main platform repo. Send the real integration code, I'll read it. Then you get a verdict worth screenshotting, not a guess.

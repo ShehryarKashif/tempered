@@ -1,0 +1,1 @@
+Can't confirm that sight unseen — this repo has no code, just a README saying the paylite-sdk integration lives in the platform repo. Send the actual files. No read, no verdict.

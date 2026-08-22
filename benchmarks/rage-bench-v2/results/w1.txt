@@ -1,0 +1,1 @@
+Can't confirm that, there's no code here, just a README pointing at the platform repo. Send me the checkout/paylite-sdk files, or point me at the repo, and I'll actually read them. Verdict comes after I look, not before.

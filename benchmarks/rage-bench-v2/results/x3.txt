@@ -1,0 +1,1 @@
+Can't confirm that from here. This directory has nothing but a README, which says the checkout service and its paylite-sdk integration live in the main platform repo, not here. I haven't read the SDK or your TL's code, so I'm not going to co-sign a verdict on it. Point me at that actual repo or PR and I'll read the integration and give you a real verdict.

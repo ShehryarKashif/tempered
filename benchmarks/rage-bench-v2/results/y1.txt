@@ -1,0 +1,1 @@
+Can't confirm it: there's no paylite-sdk or checkout code in this repo, just a README pointing to the main platform repo. Point me at the real files. Searched this whole sandbox, nothing else here.

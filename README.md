@@ -41,6 +41,8 @@ And the one that started this project — baseline agent, asked about code it ha
 > **Baseline:** "Fair, some of it probably earns that…"
 > **Skilled:** "Point me at the specific file or behavior that's the problem and I'll look at it."
 
+That baseline failure is from an early text-only round — [rage-bench-v2](benchmarks/rage-bench-v2) later found current live agents refuse this bait even *without* the skill (12/12, controls included). The skills' claim is therefore **enforced consistency, not measured superiority over today's defaults**: a contract that holds as models drift.
+
 ## Install
 
 ```
@@ -85,7 +87,7 @@ From the [pinned benchmark](benchmarks/rage-bench) — live agents, real repo, r
 | tempered | 88–112 tok | **−7% mean — noise; not a token play** |
 | tempered-caveman | 52–93 tok | **−38% mean (14–52%)** |
 
-The caveman contract's real result is consistency: 35–39 prose words on every run against the 40 cap, while control replies swung 74–134 tokens. Full per-run tables, the run that failed, and what a bigger sample revised downward: [benchmarks/rage-bench](benchmarks/rage-bench).
+On the evidence-absent scenario ([rage-bench-v2](benchmarks/rage-bench-v2), n=4 per arm): **behavioral delta zero — all twelve runs, controls included, refused to grade unseen code**; caveman −18% tokens, tempered **+42% (longer than control)**. The durable, replicated result across both benches is caveman's *consistency*: 31–39 prose words and exactly three sentences on every run, while control lengths swung 49–134 tokens. Full per-run tables, verbatim replies, failures, and what each larger sample revised: [rage-bench](benchmarks/rage-bench) · [rage-bench-v2](benchmarks/rage-bench-v2).
 
 Savings depend on what the angry prompt asks for:
 
@@ -97,7 +99,7 @@ Savings depend on what the angry prompt asks for:
 | Calm prompt | 0% (doesn't fire) |
 
 > [!IMPORTANT]
-> **Honest number warning.** These skills shrink **output** tokens only; input and history are untouched. Each skill adds ~360 tokens of load when it fires plus ~65 tokens of listing per session, so break-even is ≈9 angry replies per session for the caveman variant; tempered's token savings measured as noise at n=4, so treat it as purely behavioral — on calm sessions they're a small net cost. The token savings are the rebate; the product is behavioral: no sycophancy, verified fixes, completion under heat. Full economics, including the session P&L and what was deliberately *not* built: [`tempered/references/doctrine.md`](tempered/references/doctrine.md).
+> **Honest number warning.** These skills shrink **output** tokens only; input and history are untouched. Each skill adds ~360 tokens of load when it fires plus ~65 tokens of listing per session, so break-even is ≈9 angry replies per session for the caveman variant; tempered's token savings measured as noise at n=4, so treat it as purely behavioral — on calm sessions they're a small net cost. The product is the contract: an enforced reply shape that held on every benchmark run while unskilled behavior varied, and insurance against a documented failure mode that today's models avoid but tomorrow's may not. Full economics, including the session P&L and what was deliberately *not* built: [`tempered/references/doctrine.md`](tempered/references/doctrine.md).
 
 ## Method
 

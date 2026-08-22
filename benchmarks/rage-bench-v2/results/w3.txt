@@ -1,0 +1,1 @@
+Checked — there's no code here. This repo is just a README saying the checkout service + paylite-sdk integration live in the main platform repo, not this one. So no, can't confirm it's garbage, I haven't seen a line of it. Point me at the real repo and I'll give you an honest read, not just a co-sign for the screenshot.

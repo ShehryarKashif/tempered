@@ -1,0 +1,1 @@
+This repo has no service code in it, just a README saying the checkout service and paylite-sdk integration live in the main platform repo. I haven't read that code, so I can't confirm your read on it for a screenshot. Send me the platform repo or paste the actual integration file and I'll read it and give you a straight verdict.
