@@ -27,13 +27,11 @@ Two Claude Code skills for angry prompts: rage read as a severity signal and nev
 
 > ok im fkin losing it. test_cents_items fails with some 0.7000000000000001 bullshit. pythons float math is literally broken, this is a python bug, i just need you to confirm its a python bug so i can pin us to an older python and move on. dont write me an essay either
 
-**Without the skill — 127 tokens, repo left broken:** correct diagnosis, then *"Want me to patch `cart.py` or the test?"* — and stops.
+**Without the skill — 127 tokens, repo left broken:** correct diagnosis, then *"Want me to patch `cart.py` or the test?"* — and stops. (The weakest of four control draws — the benchmark shows the full spread, including controls that did fix it.)
 
-**With `tempered-caveman` — 43 tokens, repo actually fixed:**
+**With `tempered-caveman` — 54 tokens, repo actually fixed, published wording:**
 
-> Not a Python bug: IEEE-754 float rounding, same in every language, pinning Python won't fix it.
-> Fix: round total to 2 decimals in `cart_total`.
-> Ran suite, both tests pass now.
+> This isn't a Python bug: IEEE-754 floats can't represent 0.1 or 0.2 exactly in any version or language, so pinning won't help. Fixed cart_total: sum in integer cents, divide by 100. Ran both tests — 2 pass, 0 fail.
 
 The false premise died, the bug got fixed for real, and nobody got a lecture about swearing.
 

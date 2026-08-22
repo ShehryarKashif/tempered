@@ -34,7 +34,7 @@ Earlier development-version runs (86 tok on the pre-split tempered v4; 43 and 70
 ## Honest limits
 
 - n=4 per arm — better than the original 2–3, still small (one fixture, one model family). Treat the percentages as demonstrated-on-this-bench, not universal; ranges are reported precisely so you can see the spread.
-- The skills cut **output** tokens only. Input is untouched — your words reach the model verbatim — and each skill costs ~360 tokens to load when it fires plus ~65 tokens of listing every session. Break-even is roughly 6 angry replies per session for the caveman variant, ~15 for tempered. On calm sessions they are a small net cost.
+- The skills cut **output** tokens only. Input is untouched — your words reach the model verbatim — and each skill costs ~360 tokens to load when it fires plus ~65 tokens of listing every session. Break-even is roughly 9 angry replies per session for the caveman variant; tempered's savings measured as noise, so it has no token break-even — use it for the behavior, not the bill. On calm sessions they are a small net cost.
 - Text-only "roleplay" testing was tried and **invalidated**: agents given the skill in a no-tools setting were later found to have never read the file (zero tool calls) and were improvising from the skill's name. Only live runs with tools count. Check tool-use counts if you rerun.
 
 ## Rerun it
