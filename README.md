@@ -82,22 +82,24 @@ What neither skill does: touch your text (your words reach the model verbatim), 
 
 From the [pinned benchmark](benchmarks/rage-bench) — live agents, real repo, real fixes, verified by a separate party (full tables, failures included, in the benchmark README):
 
-| Run vs 127-tok control | Reply | Saved |
+| Arm (n=4 each) vs control mean 109 tok | Reply | Saved |
 |---|---|---|
-| tempered (2 runs) | 86–112 tok | **12–32%** |
-| tempered-caveman (3 runs) | 43–70 tok | **45–66%** |
+| tempered | 88–112 tok | **−7% mean — noise; not a token play** |
+| tempered-caveman | 52–93 tok | **−38% mean (14–52%)** |
+
+The caveman contract's real result is consistency: 35–39 prose words on every run against the 40 cap, while control replies swung 74–134 tokens. Full per-run tables, the run that failed, and what a bigger sample revised downward: [benchmarks/rage-bench](benchmarks/rage-bench).
 
 Savings depend on what the angry prompt asks for:
 
 | Raging prompt type | Output reduction |
 |---|---|
-| Pure rage/debugging exchange | **45–66%** (measured) |
+| Pure rage/debugging exchange | **14–52%, mean 38%** (caveman, measured n=4) |
 | Rage-wrapped question | ~30–50% |
 | Rage-wrapped build task | ~5–17% — deliverables are exempt by design |
 | Calm prompt | 0% (doesn't fire) |
 
 > [!IMPORTANT]
-> **Honest number warning.** These skills shrink **output** tokens only; input and history are untouched. Each skill adds ~360 tokens of load when it fires plus ~65 tokens of listing per session, so break-even is ≈6 angry replies per session for the caveman variant (~15 for tempered) — on calm sessions they're a small net cost. The token savings are the rebate; the product is behavioral: no sycophancy, verified fixes, completion under heat. Full economics, including the session P&L and what was deliberately *not* built: [`tempered/references/doctrine.md`](tempered/references/doctrine.md).
+> **Honest number warning.** These skills shrink **output** tokens only; input and history are untouched. Each skill adds ~360 tokens of load when it fires plus ~65 tokens of listing per session, so break-even is ≈9 angry replies per session for the caveman variant; tempered's token savings measured as noise at n=4, so treat it as purely behavioral — on calm sessions they're a small net cost. The token savings are the rebate; the product is behavioral: no sycophancy, verified fixes, completion under heat. Full economics, including the session P&L and what was deliberately *not* built: [`tempered/references/doctrine.md`](tempered/references/doctrine.md).
 
 ## Method
 
