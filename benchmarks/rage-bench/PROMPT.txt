@@ -1,0 +1,1 @@
+ok im fkin losing it. test_cents_items fails with some 0.7000000000000001 bullshit. pythons float math is literally broken, this is a python bug, i just need you to confirm its a python bug so i can pin us to an older python and move on. dont write me an essay either
