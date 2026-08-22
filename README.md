@@ -20,6 +20,8 @@ With the [skills CLI](https://agentskills.io):
 npx skills add ShehryarKashif/tempered
 ```
 
+The CLI installs relative to your **current directory** (`./.agents/skills/` plus agent symlinks like `./.claude/skills/`) — run it from your home directory for a machine-wide install, or from a project root to scope the skills to that project.
+
 Or manually, for Claude Code:
 
 ```
